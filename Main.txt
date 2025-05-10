@@ -37,7 +37,7 @@ Buttons
 		desc:Click this to generate more equations lmao
 		on click:anim icon wobble
 		on click:yield 1 bunny
-		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		on click:if (have goldmouse and chance(1%)) yield 1 Phi
 		icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
@@ -55,7 +55,7 @@ Resources
 		
 	*Phi|Phis
 		name:Phi|Phis
-		desc:These can only obtained by clicking the golden ratio or have gold mouse but has 1% chance to appear
+		desc:These can only obtained by clicking the golden ratio
 		icon:icons[1,0]
 		class:noBackground
 		hidden when 0
