@@ -38,7 +38,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 Equation
 		on click:if (have goldmouse and chance(1%)) yield 1 Phi
-		icon:stuff/bunny.png
+		icon:https://raw.githubusercontent.com/Nam049499/Math-clicker/refs/heads/main/Images/dT6XEz9pc.png
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
