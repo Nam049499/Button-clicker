@@ -8,7 +8,7 @@ Settings
   	background:wallpapercave.com/wp/hN0TnNU.jpg
   	cost increase:110%
   	cost refund:50%
-  	spritesheet:icons, 24 by 24, 
+  	spritesheet:icons, 24 by 24, raw.githubusercontent.com/Nam049499/Button-clicker/refs/heads/main/Images/Spritesheet.jpg
 CSS
 	.thing-icon,.particle
 	{
