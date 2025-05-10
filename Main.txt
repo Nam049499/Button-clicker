@@ -1,34 +1,34 @@
 Let's make a game!
-    Name:Math clicker
-    Author:Stewviee
-    desc: well, that's explain this
-    created:10/05/2025
-    version:1
+	Name:Math clicker
+	Author:Stewviee
+	desc: well, that's explain this
+  	created:10/05/2025
+  	version:1
 Settings
-    background:wallpapercave.com/wp/hN0TnNU.jpg
-    cost increase:110%
-    cost refund:50%
-    spritesheet:icons, 24 by 24, raw.githubusercontent.com/Nam049499/Button-clicker/refs/heads/main/Images/dT6XEz9pc.png
+  	background:wallpapercave.com/wp/hN0TnNU.jpg
+  	cost increase:110%
+  	cost refund:50%
+  	spritesheet:icons, 24 by 24, raw.githubusercontent.com/Nam049499/Button-clicker/refs/heads/main/Images/dT6XEz9pc.png
 CSS
-  .thing-icon,.particle
-  {
-    width:24px;
-    height:24px;
-  }
-  #game
-  {
-    font-family: "Pixelify Sans", sans-serif;
-    color:black;
-  }
-  .thing
-  {
-    border-radius:8px;
-    background:rgba(0, 125, 255,0.5);
-  }
-  #game.filtersOn .thing.cantAfford.notOwned
-  {
-    filter:blur(3px);
-  }
+	.thing-icon,.particle
+	{
+		width:24px;
+		height:24px;
+	}
+	#game
+	{
+		font-family: "Pixelify Sans", sans-serif;
+		color:black;
+	}
+	.thing
+	{
+		border-radius:8px;
+		background:rgba(0, 125, 255,0.5);
+	}
+	#game.filtersOn .thing.cantAfford.notOwned
+	{
+	filter:blur(3px);
+	}
 Layout
 	use default
 Buttons
@@ -60,9 +60,27 @@ Resources
 		class:noBackground
 		hidden when 0
 Shinies
-  *Goldenratio
-    name:Golden ratio
-    on click:yield (random(10,100)) equation
-    movement:anywhere wiggle growShrink
-    frequency:120
-    
+	*Goldenratio
+	name:Golden ratio
+	movement:anywhere wiggle growShrink
+	frequency:60
+	frequency variation:30
+	icon:https://raw.githubusercontent.com/Nam049499/Button-clicker/refs/heads/main/Images/Goldenratio.png
+	on click:
+		if (chance(25%))
+			$amount=max(7,random(Equation:ps*60*1,Equations:ps*60*3))*$boost
+			toast The Golden ratio grants you<//><b>[$amount] bunnies</b>.
+			yield $amount Equation
+		else
+			$amount=random(1, 10)
+			toast The Golden ratio grants you<//><b>[$amount] Phi[s?$amount]</b>!
+			yield $amount Phi
+		end
+	end
+Buildings
+	*Numbers
+		name:Numbers
+		desc:it can be used to make more equations
+		on tick:yield 3 cheesecakes
+		cost:10 Equations
+		icon:icons[3,0]
