@@ -8,28 +8,8 @@ Settings
   	background:wallpapercave.com/wp/hN0TnNU.jpg
   	cost increase:110%
   	cost refund:50%
-  	spritesheet:icons, 24 by 24, Images/Spritesheet.jpg
-	stylesheet:
-CSS
-	.thing-icon,.particle
-	{
-		width:24px;
-		height:24px;
-	}
-	#game
-	{
-		font-family: "Pixelify Sans", sans-serif;
-		color:black;
-	}
-	.thing
-	{
-		border-radius:8px;
-		background:rgba(0, 125, 255,0.5);
-	}
-	#game.filtersOn .thing.cantAfford.notOwned
-	{
-	filter:blur(3px);
-	}
+  	spritesheet:icons, 48 by 48, Images/Spritesheet.jpg
+	stylesheet:https://orteil.dashnet.org/igm/stuff/bigBlue.css
 Layout
 	use default
 Buttons
@@ -84,7 +64,7 @@ Buildings
 		desc:it can be used to make more equations
 		on tick:yield 3 Equations
 		cost:10 Equations
-		icon:icons[3,0]
+		icon:icons[2,0]
 		req:10 Equations:earned
 Upgrades
 	*goldmouse
