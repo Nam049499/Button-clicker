@@ -1,0 +1,11 @@
+Let's make a game!
+    Name:Math clicker
+    Author:Stewviee
+    desc: well, that's explain this
+    created:10/05/2025
+    version:1
+Settings
+    background:wallpapercave.com/wp/hN0TnNU.jpg
+    cost increase:110%
+    cost refund:50%
+    stylesheet:stuff/bigBlue.css
