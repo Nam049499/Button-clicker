@@ -36,7 +36,7 @@ Buttons
 		name:The plus sign
 		desc:Click this to generate more equations lmao
 		on click:anim icon wobble
-		on click:yield 1 bunny
+		on click:yield 1 Equation
 		on click:if (have goldmouse and chance(1%)) yield 1 Phi
 		icon:stuff/bunny.png
 		no text
