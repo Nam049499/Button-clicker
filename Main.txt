@@ -84,3 +84,8 @@ Buildings
 		on tick:yield 3 cheesecakes
 		cost:10 Equations
 		icon:icons[3,0]
+		req:10 Equations:earned
+Upgrades
+	*goldmouse
+		name:goldmouse
+		desc:it can make Phi by clicking it with 1% chance
