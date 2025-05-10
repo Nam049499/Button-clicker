@@ -8,12 +8,61 @@ Settings
     background:wallpapercave.com/wp/hN0TnNU.jpg
     cost increase:110%
     cost refund:50%
-    spritesheet:
-    stylesheet:stuff/bigBlue.css
-    spritesheet:icons, 24 by 24, url.jpg
+    spritesheet:icons, 24 by 24, raw.githubusercontent.com/Nam049499/Button-clicker/refs/heads/main/Images/dT6XEz9pc.png
 CSS
   .thing-icon,.particle
   {
     width:24px;
     height:24px;
   }
+  #game
+  {
+    font-family: "Pixelify Sans", sans-serif;
+    color:black;
+  }
+  .thing
+  {
+    border-radius:8px;
+    background:rgba(0, 125, 255,0.5);
+  }
+  #game.filtersOn .thing.cantAfford.notOwned
+  {
+    filter:blur(3px);
+  }
+Layout
+	use default
+Buttons
+	*plusButton
+		name:The plus sign
+		desc:Click this to generate more equations lmao
+		on click:anim icon wobble
+		on click:yield 1 bunny
+		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		icon:stuff/bunny.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+		
+Resources
+	*Equation|Equations
+		name:equation|equations
+		desc:These can make you buy anything idk
+		icon:icons[0,0]
+		class:noBackground
+		show earned
+		
+	*Phi|Phis
+		name:Phi|Phis
+		desc:These can only obtained by clicking the golden ratio or have gold mouse but has 1% chance to appear
+		icon:icons[1,0]
+		class:noBackground
+		hidden when 0
+Shinies
+  *Goldenratio
+    name:Golden ratio
+    on click:yield (random(10,100)) equation
+    movement:anywhere wiggle growShrink
+    frequency:120
+    
