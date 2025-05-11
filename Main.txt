@@ -5,7 +5,7 @@ Let's make a game!
   	created:10/05/2025
   	version:1
 Settings
-  	background:wallpapercave.com/wp/hN0TnNU.jpg
+  	background:https://cdn.wallpaperhub.app/cloudcache/b/d/7/6/4/b/bd764bb25d49a05105060185774ba14cd2c846f7.jpg
   	cost increase:110%
   	cost refund:50%
   	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/Nam049499/Math-clicker/refs/heads/main/Images/spritesheetnew.jpg
@@ -69,4 +69,6 @@ Buildings
 Upgrades
 	*goldmouse
 		name:goldmouse
+		cost:1 Phi
+		req:1 Phi
 		desc:it can make Phi by clicking it with 1% chance
