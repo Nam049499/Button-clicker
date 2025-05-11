@@ -42,7 +42,6 @@ Resources
 		hidden when 0
 Shinies
 	*Goldenratio
-	name:Golden ratio
 	movement:anywhere wiggle growShrink
 	frequency:60
 	frequency variation:30
@@ -50,7 +49,7 @@ Shinies
 	on click:
 		if (chance(25%))
 			$amount=max(7,random(Equation:ps*60*1,Equations:ps*60*3))*$boost
-			toast The Golden ratio grants you<//><b>[$amount] bunnies</b>.
+			toast The Golden ratio grants you<//><b>[$amount] equation[s?$amount]!</b>.
 			yield $amount Equation
 		else
 			$amount=random(1, 10)
@@ -66,6 +65,7 @@ Buildings
 		cost:10 Equations
 		icon:icons[2,0]
 		req:10 Equations:earned
+	
 Upgrades
 	*goldmouse
 		name:goldmouse
